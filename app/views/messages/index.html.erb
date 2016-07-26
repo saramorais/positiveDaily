@@ -1,0 +1,13 @@
+<div id="messages">
+
+  <h1>Messages</h1>
+
+  <% @messages.each do |message| %>
+
+    <div class="message">
+      <div>"<%= link_to message.message, message_path(:id => message.id) %>"</div>
+    </div>
+
+  <% end %>
+
+</div>

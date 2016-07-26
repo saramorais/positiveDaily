@@ -1,0 +1,265 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #F0F2EB;
+/*  background-image: url(<%= asset_path 'sky2.jpg' %>);
+  background-size: cover;
+  background-attachment: fixed;*/
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+  width: 100%;
+  color: black;
+  margin-top: 0px;
+  clear: both;
+}
+
+#logo {
+  background-color: #E1EDB9;
+  color: black;
+  width: 50%;
+  height: 150px;
+  display: block;
+  float: left;
+}
+
+#logo h1 {
+  font-size: 50px;
+  padding-top: 10px;
+  padding-left: 100px;
+  color: black;
+}
+
+#logo a:hover {
+  color: #FF4242;
+}
+
+
+#account-links {
+  background-color: #E1EDB9;
+  color: black;
+  width: 50%;
+  height: 150px;
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+#account-links p {
+  padding-right: 70px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#account-links a {
+  color: black;
+}
+
+#messages {
+  width: 90%;
+  display: block;
+  padding-top: 5px;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#messages h1 {
+  color: #FF4242;
+}
+
+.message {
+  display: block;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  background-color: rgba(255, 66, 66, 0.7);
+  border-radius: 10px;
+}
+
+.message div {
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.message div:hover {
+  background-color: rgba(255, 66, 66, 0.8);
+  border-radius: 10px;
+}
+
+.message a {
+  color: white;
+}
+
+.user_form {
+  text-align: center;
+  display: block;
+  clear: both;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.user_form h1 {
+  color: #FF4242;
+}
+
+.user_form li {
+  font-size: 20px;
+}
+
+.user_form input {
+  width: 600px;
+  padding: 13px 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 66, 66, 0.7);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.user_form input:focus {
+  outline: white;
+  background-color: rgba(255, 66, 66, 0.8);
+}
+
+.user_form input[type=submit] {
+  background-color: #E1EDB9;
+  color: black;
+  font-weight: 100;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 300px;
+}
+
+#user_show {
+  display: block;
+  clear: both;
+  padding-top: 15px;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#user_show h1 {
+  color: #FF4242;
+}
+
+#user_show a {
+  color: #FF4242;
+}
+
+
+#message_show {
+  display: block;
+  clear: both;
+  padding-top: 20px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#show_box {
+  width: 44%;
+  margin-left: 4%;
+  float: left;
+  background-color: rgba(255, 66, 66, 0.7); 
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+#share {
+  width: 34%;
+  margin-left: 2%;
+  float: left;
+  text-align: center;
+}
+
+
+#user_verify {
+  text-align: center;
+  display: block;
+  clear: both;
+  padding-top: 15px;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#user_verify input {
+  width: 200px;
+  padding: 13px 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 66, 66, 0.7);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+#user_verify input:focus {
+  outline: white;
+  background-color: rgba(255, 66, 66, 0.8);
+}
+
+#user_verify button {
+  border: none;
+  border-radius:8px;
+  background-color: #E1EDB9;
+  width: 200px;
+  color: black;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+

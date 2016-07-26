@@ -1,0 +1,28 @@
+<div class="user_form">
+  <p>Update the information necessary and click Update Account.</p>
+  <ul>
+    <%= form_for @user do |f| %>
+
+      <li><%= f.label :name %></li>
+      <li><%= f.text_field :name %></li>
+
+      <li><%= f.label :email %></li>
+      <li><%= f.text_field :email %></li>
+
+      <li><%= f.label :phone %></li>
+      <li><%= f.text_field :phone %></li>
+       
+      <li><%= f.label :username %></li>
+      <li><%= f.text_field :username %></li>
+
+      <li><%= f.label :password %></li>
+      <li><%= f.password_field :password %></li>  
+
+      <li><%= f.submit "Update Account" %></li>
+
+    <% end %>
+  </ul>
+
+  <p>If you wish to stop receiveing messages, you can <%= link_to "Delete Account", user_path, method: :delete %>
+
+</div>

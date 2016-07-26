@@ -1,0 +1,32 @@
+<div class="user_form">
+
+  <h1>Create a New Account</h1>
+  
+  <ul>
+    <%= form_for @user do |f| %>
+
+      <li><%= f.label :name %></li>
+      <li><%= f.text_field :name, class: "form-control", placeholder: "Zingelbert Bembledack" %></li>
+
+      <li><%= f.label :email %></li>
+      <li><%= f.email_field :email, class: "form-control", placeholder: "me@mydomain.com" %></li>
+
+      <li><%= f.label :country_code %></li>
+      <li><%= f.text_field :country_code, class: "form-control", id: "authy-countries" %></li>
+
+      <li><%= f.label :phone %></li>
+      <li><%= f.text_field :phone, class: "form-control", id: "authy-cellphone" %></li>
+       
+      <li><%= f.label :username %></li>
+      <li><%= f.text_field :username, class: "form-control", placeholder: "me@mydomain.com" %></li>
+
+      <li><%= f.label :password %></li>
+      <li><%= f.password_field :password, class: "form-control" %></li>  
+
+      <li><p>By submiting this form, you accept to receive daily text messages</p></li>
+
+      <li><%= f.submit "Create Account" %></li>
+
+    <% end %>
+  </ul>
+</div>

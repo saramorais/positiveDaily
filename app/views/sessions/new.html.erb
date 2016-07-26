@@ -1,0 +1,19 @@
+<div class="user_form">
+
+  <h1>Log In</h1>
+
+  <ul>
+    <%= form_tag '/sessions' do %>
+
+      <li><%= label_tag :username %></li>
+      <li><%= text_field_tag :username %></li>
+
+      <li><%= label_tag :password %></li>
+      <li><%= password_field_tag :password %></li>
+
+      <li><%= submit_tag 'Log In' %></li>
+
+    <% end %>
+  </ul>
+
+</div>

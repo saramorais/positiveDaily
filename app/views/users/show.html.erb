@@ -1,0 +1,12 @@
+<div id="user_show">
+
+  <h1><%= @user.name %></h1>
+  <p>Account Status: <% if @user.verified? %>Verified<% else -%>Not Verified<% end -%>
+  <p><%= link_to "Edit or Delete My Account", edit_user_path %></p>
+  <% if !@user.verified? %>
+  <p>
+    <%= link_to "Verify your account now.", verify_path %>
+  </p>
+  <% end -%>
+
+</div>

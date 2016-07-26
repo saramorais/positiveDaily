@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PositiveDaily</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+
+    <div id="logo">
+      <h1><%= link_to "Positive Daily", root_path %></h1>
+    </div>
+
+    <div id="account-links">
+      <% if current_user %> 
+          
+        <p>Welcome back, <%= current_user.name %> | <%= link_to 'Log Out', sessions_path, method: :delete %></p>
+        <p><%= link_to 'My Account', user_path(:id => current_user.id) %><p>
+
+      <% else %>
+
+        <p>Receive daily text messages</p>
+
+        <p><%= link_to "Create Account", new_user_path %> | <%= link_to "Log In", sessions_new_path %><p>
+
+      <% end %>
+
+    </div>
+
+  </header>
+
+<%= yield %>
+
+</body>
+</html>

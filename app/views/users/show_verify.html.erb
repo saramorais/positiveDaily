@@ -1,0 +1,20 @@
+<div id="user_verify">
+
+  <h1>Just To Be Safe...</h1>
+  <p>Your account has been created, but we need to make sure you're</p>
+  <p>a human in control of the phone number you gave us. Can you please</p>
+  <p>enter the verification code we just sent to your phone?</p>
+
+  <%= form_tag users_verify_path do %>
+    <%= label_tag :code, "Verification Code:" %>
+    <%= text_field_tag :token, '', class: "form-control" %>
+    <br>
+    <button type="submit">Verify Token</button>
+  <% end -%>
+  
+  <br>
+  <%= form_tag users_resend_path do %>
+    <button type="submit">Resend code</button>
+  <% end -%>
+
+</div>
